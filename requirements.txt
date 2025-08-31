@@ -1,0 +1,5 @@
+langchain
+langchain_groq
+# scikit-learn
+# matplotlib
+openpyxl
