@@ -10,7 +10,7 @@ from langchain_groq import ChatGroq
 import json
 
 # ---------------- STREAMLIT UI ----------------
-st.title("📊 Text Clustering + ChatGroq Theme Labelling Tool")
+st.title("📊 Text Clustering + Labelling Tool")
 
 st.write("""
 Upload an Excel file with a column of text descriptions.  
@@ -122,3 +122,4 @@ if uploaded_file is not None and groq_api_key:
         df.to_excel(output_file, index=False)
         with open(output_file, "rb") as f:
             st.download_button("Download Labeled Excel", f, file_name=output_file)
+
